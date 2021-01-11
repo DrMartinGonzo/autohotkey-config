@@ -40,6 +40,9 @@
 ~#Lshift::RapidHotkey("[", 2, 0.1)      ; left bracket: WIN+left_SHIFTx2
 ~#Rshift::RapidHotkey("]", 2, 0.1)      ; right bracket: WIN+right_SHIFTx2
 
+; -------- punctuation --------
+~!^;::Send {…} ; ellipsis: ALT+CTRL+;
+
 ; -------- uppercase accent characters --------
 #If, GetKeyState("CapsLock", "P")
     é::É ; uppercase é: CAPSLOCK+é
