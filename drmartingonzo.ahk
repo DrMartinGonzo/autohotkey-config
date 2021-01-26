@@ -2,6 +2,9 @@
 ; DrMartinGonzo custom autohotkey config
 ; =============================================================================
 
+ICON_PATH := A_ScriptDir . "\icons\autohotkey32.png"
+Menu TRAY, Icon, %ICON_PATH%
+
 #NoEnv
 #SingleInstance force
 ; #Warn
