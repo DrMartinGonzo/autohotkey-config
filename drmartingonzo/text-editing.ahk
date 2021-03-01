@@ -40,6 +40,11 @@
 ~#Lshift::RapidHotkey("[", 2, 0.1)      ; left bracket: WIN+left_SHIFTx2
 ~#Rshift::RapidHotkey("]", 2, 0.1)      ; right bracket: WIN+right_SHIFTx2
 
+#If, GetKeyState("CapsLock", "P")
+    u::Highlight.case.upper() ; convert highlighted text to lowercase
+    l::Highlight.case.lower() ; convert highlighted text to uppercase
+#If
+
 ; -------- punctuation --------
 ~!^;::Send {…} ; ellipsis: ALT+CTRL+;
 

@@ -42,6 +42,7 @@ GroupAdd, NoTextMod, ahk_exe WindowsTerminal.exe
 ; =============================================================================
 ; Libs
 #include Capslock.ahk
+#include Highlight.ahk
 #include RapidHotkey.ahk
 
 
