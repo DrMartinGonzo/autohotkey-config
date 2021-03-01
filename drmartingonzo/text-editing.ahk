@@ -56,3 +56,7 @@
     à::À ; uppercase à: CAPSLOCK+à
     ù::Ù ; uppercase ù: CAPSLOCK+ù
 #If
+
+; -------- Mimic some mac keys --------
+²::@            ; at sign: ²
++²::Send {#}    ; hash: SHIFT+²
