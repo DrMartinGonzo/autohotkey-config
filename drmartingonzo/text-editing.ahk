@@ -58,5 +58,6 @@
 #If
 
 ; -------- Mimic some mac keys --------
-²::@            ; at sign: ²
-+²::Send {#}    ; hash: SHIFT+²
+²::@             ; at sign: ²
++²::Send {#}     ; hash: SHIFT+²
+!^+sc034::Send \ ; backslash: Alt Gr+SHIFT+:
