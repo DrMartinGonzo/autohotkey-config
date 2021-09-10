@@ -1,6 +1,10 @@
 ; =============================================================================
 ; Windows management
 
+; -------- Language switching --------
+; disable win + space shortcut
+#space::
+
 ; -------- Close windows --------
 ; - set some programs to be closed by hitting Esc
 #IfWinActive ahk_group CloseOnEsc
