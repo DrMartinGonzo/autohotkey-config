@@ -35,10 +35,14 @@
 ~Rshift::RapidHotkey(")", 2, 0.1)       ; right parenthesis: right_SHIFTx2
 
 ~!Lshift::RapidHotkey("{{}", 2, 0.1)    ; left curly bracket: ALT+left_SHIFTx2
+~!ù::Send {{}                           ; left curly bracket: ALT+ù
 ~!Rshift::RapidHotkey("{}}", 2, 0.1)    ; right curly bracket: ALT+right_SHIFTx2
+~!µ::Send {}}                           ; right curly bracket: ALT+µ
 
 ~#Lshift::RapidHotkey("[", 2, 0.1)      ; left bracket: WIN+left_SHIFTx2
+~!+ù::Send {[}                          ; left bracket: ALT+SHIFT+ù
 ~#Rshift::RapidHotkey("]", 2, 0.1)      ; right bracket: WIN+right_SHIFTx2
+~!+µ::Send {]}                          ; right bracket: ALT+SHIFT+µ
 
 #If, GetKeyState("CapsLock", "P")
     u::Highlight.case.upper() ; convert highlighted text to lowercase
