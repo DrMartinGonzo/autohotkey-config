@@ -35,3 +35,7 @@ if not A_IsAdmin
 ; =============================================================================
 ; Surface Pro specific modules
 ; #include drmartingonzo/surface-pen.ahk
+
+; =============================================================================
+; Moko keyboard specific modules
+#include drmartingonzo/fix-moko.ahk

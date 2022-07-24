@@ -55,4 +55,6 @@ GroupAdd, NoTextMod, ahk_exe WindowsTerminal.exe
 ; Custom modules
 #include drmartingonzo/media-keys.ahk
 #include drmartingonzo/window-management.ahk
-#include drmartingonzo/text-editing.ahk
+#include drmartingonzo/text-cursor.ahk
+#include drmartingonzo/text-misc.ahk
+#include drmartingonzo/text-mac.ahk

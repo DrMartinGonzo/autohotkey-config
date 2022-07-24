@@ -65,10 +65,12 @@ PrevProgramWindow() {
 ; Window switcher key bindings
 
 ; NextProgramWindow: ALT+Tab
-!Tab::
-SetCurrentProgram()
-NextProgramWindow()
-return
+; TODO: add detection to see if Moko keyboard is currently connected
+; $!Tab::
+; SetCurrentProgram()
+; ; *$!Tab::Send #{Tab}   ; back delete line: CTRL+Backspace
+; NextProgramWindow()
+; return
 
 ; PrevProgramWindow: ALT+SHIFT+Tab
 !+Tab::
@@ -78,4 +80,5 @@ return
 
 ; Switch between windows: CTRL+Tab
 ; unfortunately CMD+SHIFT+Tab doesn't work (AutoHotKey has very limited support for this
+$<^Tab::AltTab
 $<^Tab::AltTab
