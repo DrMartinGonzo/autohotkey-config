@@ -21,20 +21,16 @@
 #IfWinActive
 
 ; -------- Prev/Next tab --------
-+F1::Send ^+{Tab}   ; jump to previous tab (SHIFT+F1)
-+F2::Send ^{Tab}    ; jump to next tab (SHIFT+F2)
-
-; -------- Additional shortcuts for Fancyzones --------
-#+Up::WinMaximize, A    ; Maximize active window: WIN+SHIFT+Up
-#+Down::WinRestore, A   ; Restore active window: WIN+SHIFT+Down
++F1::Send ^+{Tab} ; jump to previous tab (SHIFT+F1)
++F2::Send ^{Tab} ; jump to next tab (SHIFT+F2)
 
 ; -------- Taskbar --------
 $F12::HideShowTaskbar(hide := !hide) ; hide/show taskbar: F12
 
 CloseChrome() {
     Send !{f}
-	Sleep 10
-	Send {q}
+    Sleep 10
+    Send {q}
 }
 
 CloseEdge() {

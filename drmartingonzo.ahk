@@ -13,7 +13,8 @@ SendMode Input
 SetWorkingDir %A_ScriptDir% ; Default in autohotkey v2.
 AutoTrim, Off ; Default in autohotkey v2.
 SetTitleMatchMode RegEx
-SetNumlockState, AlwaysOn
+; This setting messes with Zenbook touchpad
+;SetNumlockState, AlwaysOn
 EnvGet, homedir, USERPROFILE
 
 ; AHK can't interact with admin windows unless it is running as admin...
@@ -25,7 +26,6 @@ if not A_IsAdmin
 	}
 	ExitApp
 }
-
 
 ; =============================================================================
 ; Shared stuff between all PCs
