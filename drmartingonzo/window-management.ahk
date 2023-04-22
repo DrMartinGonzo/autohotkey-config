@@ -12,12 +12,9 @@
 ; - set some programs to be closed by hitting CMD+q
 #IfWinActive ahk_group CloseOnCQ
     ^q::PostMessage 0x112, 0xF060
-; Chrome specific. Enter menu and select quit to close all windows and save open tabs
-#IfWinActive ahk_exe chrome.exe
-    ^q::CloseChrome()
-; Edge specific. Enter menu and select quit to close all windows and save open tabs
-#IfWinActive ahk_exe msedge.exe
-    ^q::CloseEdge()
+; Chromium specific. Enter menu and select quit to close all windows and save open tabs
+#IfWinActive ahk_group Chromium
+    ^q::CloseChromium()
 #IfWinActive
 
 ; -------- Prev/Next tab --------
@@ -27,16 +24,10 @@
 ; -------- Taskbar --------
 $F12::HideShowTaskbar(hide := !hide) ; hide/show taskbar: F12
 
-CloseChrome() {
+CloseChromium() {
     Send !{f}
     Sleep 10
     Send {q}
-}
-
-CloseEdge() {
-    Send !{f}
-    Sleep 10
-    Send {f}
 }
 
 HideShowTaskbar(action) {

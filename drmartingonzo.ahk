@@ -41,12 +41,15 @@ GroupAdd, CloseOnEsc, Photos ahk_class ApplicationFrameWindow
 GroupAdd, CloseOnCQ, ahk_class Notepad ahk_exe notepad.exe
 ; Windows that should not be affected by our text editing modifications
 GroupAdd, NoTextMod, ahk_exe WindowsTerminal.exe
+; Chromium
+GroupAdd, Chromium, ahk_exe chrome.exe
+GroupAdd, Chromium, ahk_exe msedge.exe
 
 ; =============================================================================
 ; Libs
 #include Capslock.ahk
 #include Highlight.ahk
-#include RapidHotkey.ahk
+; #include RapidHotkey.ahk
 
 ; =============================================================================
 ; 3rd party modules
